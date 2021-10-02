@@ -1,0 +1,436 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: #C2C2C2;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu ul {
+    text-align: center;
+    background: black;
+    white-space: nowrap;
+}
+
+.menu li {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu a:hover {
+    background: white;
+    color: black;
+}
+
+aside {
+    float: left;
+    border: 0.3em solid;
+}
+
+aside h4 {
+    background: black;
+    color: white;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 410px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: 410px;
+    width: 1228px;
+}
+
+@-webkit-keyframes slide {
+    /* 20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;} */
+    80% {
+        margin-left: -1456px;
+    }
+}
+
+h3,
+H2 {
+    text-align: center;
+    clear: both;
+}
+
+.line {
+    float: left;
+}
+
+#content {
+    padding-bottom: 5em;
+}
+
+.shoping-cart {
+    float: left;
+    padding-left: 0;
+}
+
+.productD1 {
+    float: left;
+    clear: both;
+    padding-left: 0em;
+}
+
+.other-product img {
+    float: left;
+    padding-left: 2em;
+}
+
+.Details {
+    float: left;
+    border: 1px solid;
+    height: 290px;
+    box-shadow: 5px 5px 5px 0;
+}
+
+.cartProduct {
+    padding-bottom: 1em;
+}
+
+.Bill-custom {
+    float: left;
+    padding-left: 0.5em;
+    border: black solid 1px;
+    width: 53.5%;
+}
+
+.Bill-custom table {
+    border: solid;
+}
+
+#SelectSize {
+    width: 200px;
+}
+
+table {
+    clear: both;
+}
+
+table th {
+    width: 24%;
+    background: #aaaaac;
+    border-right: 1px solid;
+    border-collapse: initial;
+}
+
+table tr {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}
+
+footer h5 {
+    clear: both;
+    text-align: center;
+}
+
+@media only screen and (min-width:360px) and (max-width:640px) {
+    body {
+        width: 89%;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #C2C2C2;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+    .menu ul {
+        background: black;
+        white-space: nowrap;
+        margin-left: -25px;
+        width: 329px;
+        text-align: left;
+    }
+    .menu li {
+        display: inline-block;
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 7px;
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .menu a:hover {
+        background: white;
+        color: black;
+    }
+    aside {
+        float: left;
+        border: 0.3em solid;
+        margin-left: -25px;
+        display: none;
+    }
+    aside h4 {
+        background: black;
+        color: white;
+    }
+    .hiden-mo {
+        display: none;
+    }
+    #slideshow {
+        overflow: hidden;
+        height: 410px;
+        width: 329px;
+        margin: 0 auto;
+        display: none;
+    }
+    .slide-wrapper {
+        width: 89%;
+        -webkit-animation: slide 14s ease infinite;
+    }
+    .slide {
+        float: left;
+        height: auto;
+        width: 89%;
+    }
+    .slide1 {
+        width: 329px;
+    }
+    @-webkit-keyframes slide {
+        20% {
+            margin-left: 0px;
+        }
+        30% {
+            margin-left: -728px;
+        }
+        50% {
+            margin-left: -728px;
+        }
+        60% {
+            margin-left: -1456px;
+        }
+        80% {
+            margin-left: -1456px;
+        }
+    }
+    #content {
+        width: 329px;
+    }
+    h3,
+    h2 {
+        text-align: center;
+        clear: both;
+    }
+    .line {
+        display: none;
+    }
+    .productD1 {
+        float: left;
+        width: 329px;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .other-product img {
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        width: 300px;
+    }
+    .Details {
+        float: left;
+        border: 1px solid;
+        height: 400px;
+        box-shadow: 5px 5px 5px 0;
+        text-align: center;
+        width: 329px;
+    }
+    #SelectSize {
+        width: 200px;
+    }
+    table th {
+        width: 24%;
+        background: #aaaaac;
+        border-right: 1px solid;
+        border-collapse: initial;
+    }
+    table tr {
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+    tr:hover {
+        background-color: black;
+        color: white;
+    }
+    footer h5 {
+        clear: both;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    body {
+        width: 89%;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #C2C2C2;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+    .menu ul {
+        background: black;
+        white-space: nowrap;
+        margin-left: -48px;
+        width: 950px;
+        text-align: center;
+    }
+    .menu li {
+        display: inline-block;
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 35px;
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .menu a:hover {
+        background: white;
+        color: black;
+    }
+    aside {
+        float: left;
+        border: 0.3em solid;
+        margin-left: -25px;
+        display: none;
+    }
+    aside h4 {
+        background: black;
+        color: white;
+    }
+    .hiden-mo {
+        display: none;
+    }
+    #slideshow {
+        overflow: hidden;
+        height: 410px;
+        width: 329px;
+        margin: 0 auto;
+        display: none;
+    }
+    .slide-wrapper {
+        width: 89%;
+        -webkit-animation: slide 14s ease infinite;
+    }
+    .slide {
+        float: left;
+        height: auto;
+        width: 89%;
+    }
+    .slide1 {
+        width: 329px;
+    }
+    @-webkit-keyframes slide {
+        20% {
+            margin-left: 0px;
+        }
+        30% {
+            margin-left: -728px;
+        }
+        50% {
+            margin-left: -728px;
+        }
+        60% {
+            margin-left: -1456px;
+        }
+        80% {
+            margin-left: -1456px;
+        }
+    }
+    #content {
+        width: 800px;
+    }
+    h3,
+    h2 {
+        text-align: center;
+        clear: both;
+    }
+    .productD1 {
+        float: left;
+        width: 500px;
+    }
+    .Details {
+        float: left;
+        border: 1px solid;
+        height: 10px;
+        box-shadow: 5px 5px 5px 0;
+        text-align: center;
+    }
+    #SelectSize {
+        width: 200px;
+    }
+    .img {
+        width: 400px;
+    }
+    table th {
+        width: 24%;
+        background: #aaaaac;
+        border-right: 1px solid;
+        border-collapse: initial;
+    }
+    table tr {
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+    tr:hover {
+        background-color: black;
+        color: white;
+    }
+    footer h5 {
+        clear: both;
+        text-align: center;
+    }
+}

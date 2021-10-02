@@ -1,0 +1,762 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: #C2C2C2;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu ul {
+    text-align: center;
+    background: black;
+    white-space: nowrap;
+}
+
+.menu li {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu a:hover {
+    background: white;
+    color: black;
+}
+
+aside {
+    float: left;
+    border: 0.3em solid;
+}
+
+aside h4 {
+    background: black;
+    color: white;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 410px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 14s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: 410px;
+    width: 1308px;
+}
+
+@-webkit-keyframes slide {
+    /* 20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;} */
+    80% {
+        margin-left: -1456px;
+    }
+}
+
+#Content h2 {
+    text-align: center;
+    clear: both;
+}
+
+table th {
+    width: 24%;
+    background: #aaaaac;
+    border-right: 1px solid;
+    border-collapse: initial;
+}
+
+table tr {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}
+
+.spring {
+    width: 20%;
+    float: left;
+}
+
+.spring h4 {
+    text-align: center;
+}
+
+.spring p {
+    text-align: center;
+}
+
+.line {
+    float: left;
+}
+
+.summer {
+    width: 20%;
+    float: left;
+}
+
+.summer h4 {
+    text-align: center;
+}
+
+.summer p {
+    text-align: center;
+}
+
+.fall {
+    width: 20%;
+    float: left;
+}
+
+.fall h4 {
+    text-align: center;
+}
+
+.fall p {
+    text-align: center;
+}
+
+.winter {
+    width: 20%;
+    float: left;
+}
+
+.winter h4 {
+    text-align: center;
+}
+
+.winter p {
+    text-align: center;
+}
+
+.synthetic {
+    width: 19%;
+    float: left;
+}
+
+.synthetic h4 {
+    text-align: center;
+}
+
+.synthetic p {
+    text-align: center;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+
+/* Full-width inputs */
+
+input[type=text],
+input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    /* border: 1px solid #ccc;
+    box-sizing: border-box; */
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 2em;
+}
+
+
+/* Add a hover effect for buttons */
+
+button:hover {
+    opacity: 0.8;
+    background-color: white;
+    color: black;
+}
+
+
+/* Extra style for the cancel button (red) */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+/* Center the avatar image inside this container */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+
+/* Avatar image */
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+
+/* Add padding to containers */
+
+.container {
+    padding: 16px;
+}
+
+
+/* The "Forgot password" text */
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto;
+    /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+/* Close button on hover */
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.Login {
+    border: grey 1px solid;
+    float: left;
+    padding-left: 15px;
+    margin-right: 100px;
+}
+
+.Resinger {
+    border: grey 1px solid;
+    float: left;
+    padding-left: 15px;
+    margin-left: 100px;
+}
+
+.Resinger-Login {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 350px;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+@media only screen and (min-width:360px) and (max-width:640px) {
+    body {
+        width: 89%;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #C2C2C2;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+    .menu ul {
+        background: black;
+        white-space: nowrap;
+        margin-left: -25px;
+        width: 329px;
+        text-align: left;
+    }
+    .menu li {
+        display: inline-block;
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 7px;
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .menu a:hover {
+        background: white;
+        color: black;
+    }
+    aside {
+        float: left;
+        border: 0.3em solid;
+        margin-left: -25px;
+        display: none;
+    }
+    aside h4 {
+        background: black;
+        color: white;
+    }
+    .hiden-mo {
+        display: none;
+    }
+    #slideshow {
+        overflow: hidden;
+        height: 410px;
+        width: 329px;
+        margin: 0 auto;
+        display: none;
+    }
+    .slide-wrapper {
+        width: 89%;
+        -webkit-animation: slide 14s ease infinite;
+    }
+    .slide {
+        float: left;
+        height: auto;
+        width: 89%;
+    }
+    .slide1 {
+        width: 329px;
+    }
+    @-webkit-keyframes slide {
+        20% {
+            margin-left: 0px;
+        }
+        30% {
+            margin-left: -728px;
+        }
+        50% {
+            margin-left: -728px;
+        }
+        60% {
+            margin-left: -1456px;
+        }
+        80% {
+            margin-left: -1456px;
+        }
+    }
+    #content {
+        width: 329px;
+    }
+    #Content h2 {
+        text-align: center;
+        clear: both;
+    }
+    table {
+        margin-left: -25px;
+        width: 100%;
+    }
+    table th {
+        width: 24%;
+        background: #aaaaac;
+        border-right: 1px solid;
+        border-collapse: initial;
+    }
+    table tr {
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+    tr:hover {
+        background-color: black;
+        color: white;
+    }
+    .spring {
+        width: 329px;
+        float: left;
+    }
+    .spring h4 {
+        text-align: center;
+    }
+    .spring p {
+        text-align: center;
+    }
+    .line {
+        width: "100%";
+        size: "5em";
+        color: "black";
+        display: none;
+    }
+    .summer {
+        width: 329px;
+        float: left;
+    }
+    .summer h4 {
+        text-align: center;
+    }
+    .summer p {
+        text-align: center;
+    }
+    .fall {
+        width: 329px;
+        float: left;
+    }
+    .fall h4 {
+        text-align: center;
+    }
+    .fall p {
+        text-align: center;
+    }
+    .winter {
+        width: 329px;
+        float: left;
+    }
+    .winter h4 {
+        text-align: center;
+    }
+    .winter p {
+        text-align: center;
+    }
+    .synthetic {
+        width: 329px;
+        float: left;
+    }
+    .synthetic h4 {
+        text-align: center;
+    }
+    .synthetic p {
+        text-align: center;
+    }
+    footer h5 {
+        text-align: center;
+    }
+    .Login {
+        border: grey 1px solid;
+        float: left;
+        margin-left: 28px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .Resinger {
+        border: grey 1px solid;
+        float: left;
+        margin-left: 28px;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+    .Resinger-Login {
+        width: 329px;
+        padding-left: 0px;
+    }
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+    button {
+        background-color: black;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100px;
+        height: 2.1em;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1024px) {
+    body {
+        width: 89%;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #C2C2C2;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+    .menu ul {
+        background: black;
+        white-space: nowrap;
+        margin-left: -28px;
+        width: 910px;
+        text-align: center;
+    }
+    .menu li {
+        display: inline-block;
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 35px;
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .menu a:hover {
+        background: white;
+        color: black;
+    }
+    aside {
+        float: left;
+        border: 0.3em solid;
+        margin-left: -25px;
+        display: none;
+    }
+    aside h4 {
+        background: black;
+        color: white;
+    }
+    .hiden-mo {
+        display: none;
+    }
+    #slideshow {
+        overflow: hidden;
+        height: 410px;
+        width: 329px;
+        margin: 0 auto;
+        display: none;
+    }
+    .slide-wrapper {
+        width: 89%;
+        -webkit-animation: slide 14s ease infinite;
+    }
+    .slide {
+        float: left;
+        height: auto;
+        width: 89%;
+    }
+    .slide1 {
+        width: 329px;
+    }
+    @-webkit-keyframes slide {
+        20% {
+            margin-left: 0px;
+        }
+        30% {
+            margin-left: -728px;
+        }
+        50% {
+            margin-left: -728px;
+        }
+        60% {
+            margin-left: -1456px;
+        }
+        80% {
+            margin-left: -1456px;
+        }
+    }
+    #content {
+        width: 329px;
+    }
+    #Content h2 {
+        text-align: center;
+        clear: both;
+    }
+    table {
+        margin-left: -25px;
+        width: 100%;
+    }
+    table th {
+        width: 24%;
+        background: #aaaaac;
+        border-right: 1px solid;
+        border-collapse: initial;
+    }
+    table tr {
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+    tr:hover {
+        background-color: black;
+        color: white;
+    }
+    #content {
+        width: 1000px;
+    }
+    .spring {
+        width: 329px;
+        float: left;
+    }
+    .spring h4 {
+        text-align: center;
+    }
+    .spring p {
+        text-align: center;
+    }
+    .line {
+        width: "100%";
+        size: "5em";
+        color: "black";
+        display: none;
+    }
+    .summer {
+        width: 329px;
+        float: left;
+        padding-left: 200px;
+    }
+    .summer h4 {
+        text-align: center;
+    }
+    .summer p {
+        text-align: center;
+    }
+    .fall {
+        width: 329px;
+        float: left;
+    }
+    .fall h4 {
+        text-align: center;
+    }
+    .fall p {
+        text-align: center;
+    }
+    .winter {
+        width: 329px;
+        float: left;
+        padding-left: 200px;
+    }
+    .winter h4 {
+        text-align: center;
+    }
+    .winter p {
+        text-align: center;
+    }
+    .synthetic {
+        width: 329px;
+        float: left;
+    }
+    .synthetic h4 {
+        text-align: center;
+    }
+    .synthetic p {
+        text-align: center;
+    }
+    .Login {
+        border: grey 1px solid;
+        float: left;
+        height: 350px;
+        margin-left: 108px;
+        width: 250px;
+        margin-bottom: 20px;
+        float: left;
+    }
+    .Resinger {
+        border: grey 1px solid;
+        margin-left: 28px;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+    .Resinger-Login {
+        width: 800px;
+        padding-left: 10px;
+        float: left;
+    }
+    footer h5 {
+        text-align: center;
+    }
+}

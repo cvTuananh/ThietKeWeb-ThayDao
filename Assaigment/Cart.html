@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Cart.css">
+    <script src="./js/myfunciton.js"></script>
+    <title>Balensiaga-De</title>
+</head>
+
+<body id="wraper">
+    <header>
+        <img src="./IMG/logopng.png" alt="shop king">
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./MenProduct.html">Man</a></li>
+            <li><a href="./WomenProduct.html">Woman</a></li>
+            <li><a href="./Cart.html">Cart</a></li>
+            <li>
+                <a href="#"></a>
+            </li>
+
+        </ul>
+    </nav>
+    <aside id="sidebar">
+        <h4>Suport Online</h4>
+        <p>Call for us </p>
+        <a href="tel:+89653354">1900654123</a>
+        <h4>New Product</h4>
+        <p>Colection 10/2/2021</p>
+        <p>Colection 10/4/2021</p>
+        <p>Colection 10/6/2021</p>
+        <p>Colection 10/8/2021</p>
+        <h4>Online</h4>
+        <p>Toal : 100 menber</p>
+    </aside>
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide"><img src="./IMG/banner1.jpg" width="1228px" height="410px"></div>
+            <div class="slide"><img src="./IMG/banner2.jpg" width="1228px" height="410px"></div>
+            <div class="slide"><img src="./IMG/banner1.jpg" width="1228px" height="410px"></div>
+        </div>
+    </div>
+    <main id="Content">
+        <div>
+            <h3>ProdctDetails</h3>
+            <hr width="100%" align="center" size="5em" color="black">
+            <div class="shoping-cart">
+                <div class="cartProduct">
+                    <div class="productD1">
+                        <img class="img" src="./IMG/Small-Summer_21_Look_3.jpg" alt="Sumer" width="290px" height="290px">
+                    </div>
+                    <div class="Details">
+                        <h4>WOMEN'S HOURGLASS COAT IN BEIGE</h4>
+                        <p class="size1">Size : S</p>
+                        <P>Price : 10.000$</P>
+                        <p class="quality1">Quality : 01</p>
+                        <p class="toal1">Toal : 10.000</p>
+                        <p>Update Choice Size and Quantity</p>
+                        <form name="car1">
+                            <select name="agent_size" id="agent_size">
+                              <option value="1" name="agent_size1">Size S</option>
+                              <option value="2" name="agent_size">Size M</option>
+                              <option value="3" name="agent_size">Size L</option>
+                              <option value="4" name="agent_size">Size XL</option>
+                            </select>
+                            <select name="agent_quality" id="agent_quality" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                            <input type="button" value="Update" name="btn-up" onclick="updatecar1()">
+                        </form>
+                        <input type="button" value="Delete" onclick="removeCart()">
+                    </div>
+                </div>
+                <!-- <div class="line"><hr width="1px" size="306px" color="black"></div> -->
+                <div class="cartProduct02">
+                    <div class="productD1">
+                        <img class="img" src="./IMG/Small-Summer_21_Look_4.jpg" alt="Sumer" width="290px" height="290px">
+                    </div>
+                    <div class="Details">
+                        <h4>MAN HOT HOURGLASS COAT IN BEIGE</h4>
+                        <p class="size2">Size : L</p>
+                        <P>Price : 20.000$</P>
+                        <p class="quality2">Quality : 01</p>
+                        <p class="toal2">Toal : 20.000</p>
+                        <p>Update Choice Size and Quantity</p>
+                        <form name="cart2">
+                            <select name="agent_size2" id="agent_size2">
+                              <option value="1">Size S</option>
+                              <option value="2">Size M</option>
+                              <option value="3">Size L</option>
+                              <option value="4">Size XL</option>
+                            </select>
+                            <select name="agent_quality2">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                            <input type="button" value="Update" onclick="updatecart2()">
+                        </form>
+                        <input type="button" value="Delete" onclick="removeCart2()">
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <hr width="1px" size="306px" color="black">
+            </div>
+            <div class="Bill-custom">
+                <h3>Bill Pay Balenciaga</h3>
+                <p>Name : Cu Vi Tuan Anh</p>
+                <p>Addres: 120 Mai Am - Da Nang City -Viet Nam</p>
+                <p>Phone : +84896411245</p>
+                <p>Email : Binxen213@gmail.com</p>
+                <p>Custom: Vip</p>
+                <table>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Size</th>
+                        <th>Quality</th>
+                        <th>Price</th>
+                        <th>Toal</th>
+                    </tr>
+                    <tr id="tab-bill">
+                        <td>Woman Hougal Sumer</td>
+                        <td class="size1-bill">L</td>
+                        <td class="quality1-bill">01</td>
+                        <td>10.000$</td>
+                        <td id="cart1">10.000$</td>
+                    </tr>
+                    <tr id="tab-bill2">
+                        <td>Man Hot Sumer</td>
+                        <td class="size2-bill">S</td>
+                        <td class="quality2-bill">01</td>
+                        <td>20.000$</td>
+                        <td id="cart2">20.000$</td>
+                    </tr>
+                    <tr id="Tab-toal-bill">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td><input type="button" value="Click CONFIRM" onclick="Confirm()">
+                        <td id="toal">30.000$</td>
+                    </tr>
+                </table>
+                <p>
+                    – Pursuant to Decree No: 51/2010/ND-CP of Government in May 17 th , 2010 about Law on providing for goods sale and service provision invoices. – Pursuant to Decree No: 04/2014/ND-CP of Government in January 17 th , 2014 about amending and supplementing
+                    a number of Articles of the providing for goods sale and service provision invoices – Pursuant to Circular No: 39/2014/TT-BTC of Government in March 17 th , 2014 about guiding for execution the Government’s Decree No. 51/2010/ND-CP
+                    of Government in May 14 th , 2010 and Decree No. 04/2014/ND-Cp dated January 17, 2014 on sale invoices – Pursuant to Circular No. 32/2011/TT-BTC of Government in March 14 th , 2011 about guiding the creation, issuance and use of E-Invoices
+                    for goods sale and service provision
+                </p>
+                <p>--------------------------------------------------------------------------------------------------------SIGN NAME</p>
+                <img src="./IMG/logopng.png" alt="" width="200px" height="200px">
+                <h3>Thank And See You Agin</h3>
+            </div>
+            <hr width="100%" align="center" size="5em" color="black">
+            <h2>Other Product</h2>
+            <div class="other-product">
+                <img src="./IMG/men1-a.jpg" alt="" width="400px" height="400px">
+                <div class="line">
+                    <hr width="1px" size="400" color="black">
+                </div>
+                <img src="./IMG/men2-a.jpg" alt="" width="400px" height="400px">
+                <div class="line">
+                    <hr width="1px" size="400" color="black">
+                </div>
+                <img src="./IMG/men3-a.jpg" alt="" width="400px" height="400px">
+                <div class="line">
+                    <hr width="1px" size="400px" color="black">
+                </div>
+                <img src="./IMG/men4-a.jpg" alt="" width="400px" height="400px">
+                <div class="line">
+                    <hr width="1px" size="400px" color="black">
+                </div>
+                <img src="./IMG/men5-a.jpg" alt="" width="400px" height="400px">
+                <div class="line">
+                    <hr width="1px" size="400px" color="black">
+                </div>
+                <img src="./IMG/SP4-B.jpg" alt="" width="400px" height="400px">
+                <div class="line">
+                    <hr width="1px" size="400px" color="black">
+                </div>
+            </div>
+
+            <div class="table">
+                <hr width="100%" align="center" size="5em" color="black">
+
+                <table>
+                    <h2>About us</h2>
+                    <tr>
+                        <th>Boutique</th>
+                        <th>Cilen Service</th>
+                        <th>The Company</th>
+                        <th>Contact Us</th>
+                        <th>Content</th>
+                    </tr>
+                    <tr>
+                        <td>Find a store nearby</td>
+                        <td>FAQ</td>
+                        <td>Careers</td>
+                        <td>call us <a href="tel:+2523345">658466341</a></td>
+                        <td>Facebook</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Returns</td>
+                        <td>Careers-Design</td>
+                        <td>Mon sat 9am-10pm</a>
+                        </td>
+                        <td>Tiwer</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sniping</td>
+                        <td>Cookie Seting</td>
+                        <td>
+                            </a>
+                        </td>
+                        <td>Instagam</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Payment</td>
+                        <td>Legal</td>
+                        <td>
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>World food programme</td>
+                        <td>
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+    </main>
+    <footer>
+        <hr width="100%" align="center" size="5em" color="black">
+        <h5>@2020 All Rights Reversed – Re-design by VUS School</h5>
+    </footer>
+</body>

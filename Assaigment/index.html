@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./js/login.js"></script>
+    <script src="https://kit.fontawesome.com/44a2a653e7.js" crossorigin="anonymous"></script>
+    <title>Balensiaga-De</title>
+</head>
+
+<body id="wraper">
+    <header>
+        <img src="./IMG/logopng.png" alt="shop king">
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./MenProduct.html">Man</a></li>
+            <li><a href="./WomenProduct.html">Woman</a></li>
+            <li><a href="./Cart.html">Cart</a></li>
+            <li><a href="#"><button onclick="document.getElementById('id01').style.display='block'">Login</button></a></li>
+        </ul>
+    </nav>
+    <aside id="sidebar">
+        <h4>Suport Online</h4>
+        <p>Call for us </p>
+        <a href="tel:+89653354">1900654123</a>
+        <h4>New Product</h4>
+        <p>Colection 10/2/2021</p>
+        <p>Colection 10/4/2021</p>
+        <p>Colection 10/6/2021</p>
+        <p>Colection 10/8/2021</p>
+        <h4>Online</h4>
+        <p>Toal : 100 menber</p>
+    </aside>
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide"><img src="./IMG/banner1.jpg" width="1228px" height="410px"></div>
+            <div class="slide"><img src="./IMG/banner2.jpg" width="1228px" height="410px"></div>
+            <div class="slide"><img src="./IMG/banner1.jpg" width="1228px" height="410px"></div>
+        </div>
+    </div>
+    <main id="Content">
+        <div class="hiden-mo">
+            <h2>Fashion Hot Year</h5>
+                <img src="./IMG/hot year.jpg" alt="Fashion hot year" style="width: 1308px;">
+                <img src="./IMG/hotyear2.jpg" alt="Fashion hot year for man" style="width: 1308px;">
+                <hr width="100%" align="center" size="5em" color="black">
+        </div>
+
+        <h2>Fashion Trend</h2>
+        <hr width="100%" align="center" size="5em" color="black">
+        <div class="spring">
+            <h4>Spring 2021 youthful</h4>
+            <img src="./IMG/Spring.jpg" alt="spring trend" width="220px" height="320px">
+            <p>“The clothes are simple — but with the concept of simplicity as an antidote to useless complication,” declared Miuccia Prada in reference to her extremely minimal collection, which encapsulated one of the quietest yet directional presentations
+                of the season. Alled-Martinez Men’s Spring 2021</p>
+        </div>
+        <div class="line">
+            <hr width="1px" size="590" color="black">
+        </div>
+        <div class="summer">
+            <h4>Summer 2021 Sexy</h4>
+            <img src="./IMG/Sumer.jpg" alt="summer trend" width="220px" height="320px">
+            <p>You could be forgiven for thinking that the spring/summer 2021 collections – and the subsequent raft of spring/summer 2021 trends – were something of a damp squib. Certainly, thanks to the ongoing pandemic, it was a season like no other. </p>
+        </div>
+        <div class="line">
+            <hr width="1px" size="590" color="black">
+        </div>
+        <div class="fall">
+            <h4>Fall 2021 Care</h4>
+            <img src="./IMG/fall.jpg" alt="fall trend" width="220px" height="320px">
+            <p> Designers and consumers are ready once more for fashion—proper fashion—and what's being provided to us in this period of emergence, celebration and joy is a clever mix of elevated casual staples our revised closets have come to rely upon and
+                more outré items that provide plenty of peacocking mileage.
+            </p>
+        </div>
+        <div class="line">
+            <hr width="1px" size="590" color="black">
+        </div>
+        <div class="winter">
+            <h4>Winter 2021 Cool</h4>
+            <img src="./IMG/winter.jpg" alt="winter trend" width="220px" height="320px">
+            <p> A new season heralds a positive mindset shift as consumers look to the future. An increasingly optimistic outlook is reigniting fashion’s sense of fun as going out, getting dressed up and making a statement become a realistic possibility.
+                Across the Fashion Weeks, designers are channelling this energy into collections that aim to inspire and excite in the new normal landscape.
+            </p>
+        </div>
+        <div class="line">
+            <hr width="1px" size="590" color="black">
+        </div>
+        <div class="synthetic">
+            <h4>Synthetic 2021 Fashion</h4>
+            <img src="./IMG/synthetic.jpg" alt="winter trend" width="250px" height="320px">
+            <p> A new season heralds a positive mindset shift as consumers look to the future. An increasingly optimistic outlook is reigniting fashion’s sense of fun as going out, getting dressed up and making a statement become a realistic possibility.
+                Across the Fashion Weeks, designers are channelling this energy into collections that aim to inspire and excite in the new normal landscape.
+            </p>
+        </div>
+        <hr width="100%" align="center" size="5em" color="black">
+        <!-- <button onclick="document.getElementById('id01').style.display='block'">Login</button> -->
+
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate" name="login">
+                <div class="imgcontainer">
+                    <img src="./IMG/login2.jpg" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" onclick="checklogin()">Login</button>
+                    <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <hr width="100%" align="center" size="5em" color="black">
+        <h2>About us</h2>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Boutique</th>
+                    <th>Cilen Service</th>
+                    <th>The Company</th>
+                    <th>Contact Us</th>
+                    <th>Content</th>
+                </tr>
+                <tr>
+                    <td>Find a store nearby</td>
+                    <td>FAQ</td>
+                    <td>Careers</td>
+                    <td>call us <a href="tel:+2523345">658466341</a></td>
+                    <td>Facebook</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Returns</td>
+                    <td>Careers-Design</td>
+                    <td>Mon sat 9am-10pm</a>
+                    </td>
+                    <td>Tiwer</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sniping</td>
+                    <td>Cookie Seting</td>
+                    <td>
+                        </a>
+                    </td>
+                    <td>Instagam</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Payment</td>
+                    <td>Legal</td>
+                    <td>
+                        </a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>World food programme</td>
+                    <td>
+                        </a>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <hr width="100%" align="center" size="5em" color="black">
+    <footer>
+        <h5>@2020 All Rights Reversed – Re-design by VUS School</h5>
+    </footer>
+</body>
+
+</html>
